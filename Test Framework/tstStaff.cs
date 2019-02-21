@@ -45,6 +45,94 @@ namespace Test_Framework
             Assert.AreEqual(AStaff.FirstName, SomeFirstName);
         }
 
+        [TestMethod]
+        public void LastName()
+        {
+            //create an instance of the class we want to create
+            clsStaff AStaff = new clsStaff();
+            //create a variable to store the name of a staff member
+            string SomeLastName;
+            //assign a name to the member
+            SomeLastName = "Peters";
+            //try to send some data to the LastName property
+            AStaff.LastName = SomeLastName;
+            //check to see that the data in the variable and the property are the same
+            Assert.AreEqual(AStaff.LastName, SomeLastName);
+        }
+
+        [TestMethod]
+        public void Valid()
+        {
+            //create an instance of the class we want to create
+            clsStaff AStaff = new clsStaff();
+            //test to see if a valid method exists
+            AStaff.Valid("David Peters");
+            
+        }
+
+        [TestMethod]
+        //test that the first name validation throws an error when first name is blank
+        public void FirstNameMinLessOne()
+        {
+            //create an instance of the class we want to create
+            clsStaff AStaff = new clsStaff();
+            //create a variable to record the result of the validation test
+            Boolean OK;
+            //test the valid method with a blank string
+            OK = AStaff.Valid("");
+            //assert that the outcome should be false
+            Assert.IsFalse(OK);
+        }
+
+        [TestMethod]
+        public void FirstNameMaxPlusOne()
+        {
+            //create an instance of the class we want to create
+            clsStaff AStaff = new clsStaff();
+            //create a variable to record the result of the validation test
+            Boolean OK;
+            //create a variable to store the test data
+            string SomeText = "";
+            //pad the data to the required number of characters
+            SomeText = SomeText.PadLeft(21);
+            //test the valid method with a two character string
+            OK = AStaff.Valid(SomeText);
+            //assert that the outcome should be true
+            Assert.IsFalse(OK);
+        }
+
+        [TestMethod]
+        public void FirstNameExtremeMax()
+        {
+            //create an instance of the class we want to create
+            clsStaff AStaff = new clsStaff();
+            //create a variable to record the result of the validation test
+            Boolean OK;
+            //create a variable to store the test data
+            string SomeText = "";
+            //pad the data to the required number of characters
+            SomeText = SomeText.PadLeft(400);
+            //test the valid method with a two character string
+            OK = AStaff.Valid(SomeText);
+            //assert that the outcome should be true
+            Assert.IsFalse(OK);
+        }
+
+        [TestMethod]
+        //test that the first name validation throws an error when first name is blank
+        public void LastNameMinLessOne()
+        {
+            //create an instance of the class we want to create
+            clsStaff AStaff = new clsStaff();
+            //create a variable to record the result of the validation test
+            Boolean OK;
+            //test the valid method with a blank string
+            OK = AStaff.Valid("");
+            //assert that the outcome should be false
+            Assert.IsFalse(OK);
+        }
+
+
 
     }
 }
