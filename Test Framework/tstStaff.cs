@@ -31,33 +31,33 @@ namespace Test_Framework
         }
 
         [TestMethod]
-        public void FirstName()
+        public void StaffFirstName()
         {
             //create an instance of the class we want to create
             clsStaff AStaff = new clsStaff();
             //create a variable to store the name of a staff member
-            string SomeFirstName;
+            string SomeStaffFirstName;
             //assign a name to the member
-            SomeFirstName = "David";
+            SomeStaffFirstName = "David";
             //try to send some data to the FirstName property
-            AStaff.FirstName = SomeFirstName;
+            AStaff.StaffFirstName = SomeStaffFirstName;
             //check to see that the data in the variable and the property are the same
-            Assert.AreEqual(AStaff.FirstName, SomeFirstName);
+            Assert.AreEqual(AStaff.StaffFirstName, SomeStaffFirstName);
         }
 
         [TestMethod]
-        public void LastName()
+        public void StaffLastName()
         {
             //create an instance of the class we want to create
             clsStaff AStaff = new clsStaff();
             //create a variable to store the name of a staff member
-            string SomeLastName;
+            string SomeStaffLastName;
             //assign a name to the member
-            SomeLastName = "Peters";
+            SomeStaffLastName = "Peters";
             //try to send some data to the LastName property
-            AStaff.LastName = SomeLastName;
+            AStaff.StaffLastName = SomeStaffLastName;
             //check to see that the data in the variable and the property are the same
-            Assert.AreEqual(AStaff.LastName, SomeLastName);
+            Assert.AreEqual(AStaff.StaffLastName, SomeStaffLastName);
         }
 
         [TestMethod]
@@ -72,7 +72,7 @@ namespace Test_Framework
 
         [TestMethod]
         //test that the first name validation throws an error when first name is blank
-        public void FirstNameMinLessOne()
+        public void StaffFirstNameMinLessOne()
         {
             //create an instance of the class we want to create
             clsStaff AStaff = new clsStaff();
@@ -85,7 +85,7 @@ namespace Test_Framework
         }
 
         [TestMethod]
-        public void FirstNameMaxPlusOne()
+        public void StaffFirstNameMaxPlusOne()
         {
             //create an instance of the class we want to create
             clsStaff AStaff = new clsStaff();
@@ -102,7 +102,7 @@ namespace Test_Framework
         }
 
         [TestMethod]
-        public void FirstNameExtremeMax()
+        public void StaffFirstNameExtremeMax()
         {
             //create an instance of the class we want to create
             clsStaff AStaff = new clsStaff();
@@ -118,9 +118,35 @@ namespace Test_Framework
             Assert.IsFalse(OK);
         }
 
+        //[TestMethod]
+        //public void StaffFirstNameMinBoundary()
+        //{
+        //    //create an instance of the class we want to create
+        //    clsStaff AStaff = new clsStaff();
+        //    //create a string variable to store the result of the validation
+        //    String Error = "";
+        //    //create some test data to test the method
+        //    string SomeStaffFirstName = "a";
+        //    //invoke the method
+        //    Error = AStaff.Valid(SomeStaffFirstName);
+        //    //test to see that the result is ok ie.there was no error message returned
+        //    Assert.AreEqual(Error, "");
+        //}
+
+
+
+
+
+
+
+
+
+
+
+
         [TestMethod]
         //test that the first name validation throws an error when first name is blank
-        public void LastNameMinLessOne()
+        public void StaffLastNameMinLessOne()
         {
             //create an instance of the class we want to create
             clsStaff AStaff = new clsStaff();
