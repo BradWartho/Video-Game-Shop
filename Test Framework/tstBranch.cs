@@ -1,4 +1,5 @@
 ﻿using System;
+using Class_Library;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Test_Framework
@@ -11,26 +12,25 @@ namespace Test_Framework
         {
             //create an instance of the class we want to create
             clsBranch ABranch = new clsBranch();
-           
+            //test to see that it exists
+            Assert.IsNotNull(ABranch);
 
 
 
         }
+
         [TestMethod]
-        public void BranchID()
+        public void BranchIDPropertyOK()
         {
             //create an instance of the class we want to create
             clsBranch ABranch = new clsBranch();
-            Int32 BranchID;
-            //assign a value to the variable
-            BranchID = 123;
-            //i tried to send some data to the branchID property
-            ABranch.BranchID = BranchID;
-           
-            //check to see that the data in the variable and the property are the same
-            Assert.AreEqual(ABranch.BranchID, BranchID);
+            //crate some tests data to assign to the property
+            Int32 BranchNo = 1;
+            //assign the data to the property
+            ABranch.BranchNo = BranchNo;
+            //test to see that the two values are the same
+            Assert.AreEqual(ABranch.BranchNo, BranchNo);
 
         }
-
     }
 }
