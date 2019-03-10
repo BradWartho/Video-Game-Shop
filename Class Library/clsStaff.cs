@@ -4,29 +4,30 @@ namespace Class_Library
 {
     public class clsStaff
     {
-        public int StaffID { get; set; }
-        public string StaffFirstName { get; set; }
-        public string StaffLastName { get; set; }
-
-        public Boolean Valid(string StaffFirstName)
+        public clsStaff()
         {
-            //var to record any erros found in first name assuming all is ok
-            Boolean OK = true;
-            //test to see if the first name has zero characters
-            if (StaffFirstName.Length == 0)
-            {
-                //set OK to false
-                OK = false;
-            }
-            //test to see that the string is no more than 20 characters
-            if (StaffFirstName.Length > 20)
-            {
-                //set OK to false
-                OK = false;
-            }
-            //return the results of the tests
-            return OK;
         }
 
+        public string FirstName { get; set; }
+        public int StaffID { get; set; }
+        public string LastName { get; set; }
+
+        public string Valid(string someLastName)
+        {
+            //string variable to store the error message
+            string Error = "";
+           //if the last name is more than 30 characters
+           if (someLastName.Length > 30)
+            {
+                //return an error message
+                Error = "The last name cannot have more than 30 characters";
+            }
+           if (someLastName.Length == 0)
+            {
+                //return an error message
+                Error = "The last name may not be blank!";
+            }
+            return Error;
+        }
     }
 }
