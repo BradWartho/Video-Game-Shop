@@ -48,7 +48,6 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="clsBranch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="tstBranch.cs" />
     <Compile Include="tstStaff.cs" />
