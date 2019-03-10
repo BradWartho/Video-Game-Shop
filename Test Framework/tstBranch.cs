@@ -32,5 +32,36 @@ namespace Test_Framework
             Assert.AreEqual(ABranch.BranchNo, BranchNo);
 
         }
+
+        [TestMethod]
+        public void BranchPropertyOK()
+        {
+            //create an instance of the class we want to create
+            clsBranch ABranch = new clsBranch();
+            //create some test data to assign to the property
+            string SomeBranch = "Northampton";
+            //assign the data to the property
+            ABranch.Branch = SomeBranch;
+            //test to see that the two values are the same 
+            Assert.AreEqual(ABranch.Branch, SomeBranch);
+
+        }
+        [TestMethod]
+        public void Valid()
+        {
+            //Create an instance of the class we want to create
+            clsBranch ABranch = new clsBranch();
+            //create a string variable to store the result of the validation
+            String Error = "";
+            //create some tests data to test the method 
+            string SomeBranch = "Northampton";
+            //invoke the method
+            Error = ABranch.Valid(SomeBranch);
+            //test to see that the result is OK
+            Assert.AreEqual(Error, "");
+
+
+        }
+
     }
 }
