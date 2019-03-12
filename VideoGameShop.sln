@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Class Library", "Class Libr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test Framework", "Test Framework\Test Framework.csproj", "{8B11CB3B-BB74-475B-9D68-F2133897287D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VGFrontEnd", "VGFrontEnd\VGFrontEnd.csproj", "{8351B270-C59B-4CF9-ADBF-E5AB868DF9C0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{8B11CB3B-BB74-475B-9D68-F2133897287D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B11CB3B-BB74-475B-9D68-F2133897287D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B11CB3B-BB74-475B-9D68-F2133897287D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8351B270-C59B-4CF9-ADBF-E5AB868DF9C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8351B270-C59B-4CF9-ADBF-E5AB868DF9C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8351B270-C59B-4CF9-ADBF-E5AB868DF9C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8351B270-C59B-4CF9-ADBF-E5AB868DF9C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
