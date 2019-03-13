@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsBranch.cs" />
+    <Compile Include="clsBranchCollection.cs" />
     <Compile Include="clsStaff.cs" />
     <Compile Include="clsStaffCollection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
