@@ -77,8 +77,82 @@ namespace Test_Framework
             Assert.AreNotEqual(Error, "");
         }
 
+        [TestMethod]
+        public void BranchMinBoundary()
+        {
+            //create an instance of the class we want to create
+            clsBranch ABranch = new clsBranch();
+            //create a string variable to store the result of the validation
+            String Error = "";
+            //create some test data to test the method
+            string SomeBranch = "a";
+            //invoke the method
+            Error = ABranch.Valid(SomeBranch);
+            //test to see that the result is NOT OK i.e there should be an error message 
+            Assert.AreEqual(Error, "");
+
+        }
+        [TestMethod]
+        public void BranchMinPlusOne()
+        {
+            //create an instance of the class we want to create
+            clsBranch ABranch = new clsBranch();
+            //create a string variable to store the result of the validation
+            String Error = "";
+            //create some test data to test the method
+            string SomeBranch = "aa";
+            //invoke the method
+            Error = ABranch.Valid(SomeBranch);
+            //test to see that the result is NOT OK i.e there should be an error message 
+            Assert.AreEqual(Error, "");
+        }
+
+        [TestMethod]
+        public void BranchMaxLessOne()
+        {
+            //create an instance of the class we want to create
+            clsBranch ABranch = new clsBranch();
+            //create a string variable to store the result of the validation
+            String Error = "";
+            //create some test data to test the method
+            string SomeBranch = "01234567890123456789012345678";
+            //invoke the method
+            Error = ABranch.Valid(SomeBranch);
+            //test to see that the result is NOT OK i.e there should be an error message 
+            Assert.AreEqual(Error, "");
+        }
+        [TestMethod]
+        public void BranchMaxBoundary()
+        {
+            //create an instance of the class we want to create
+            clsBranch ABranch = new clsBranch();
+            //create a string variable to store the result of the validation
+            String Error = "";
+            //create some test data to test the method
+            string SomeBranch = "012345678901234567890123456789";
+            //invoke the method
+            Error = ABranch.Valid(SomeBranch);
+            //test to see that the result is NOT OK i.e there should be an error message 
+            Assert.AreEqual(Error, "");
+        }
+        [TestMethod]
+        public void BranchMid()
+        {
+            //create an instance of the class we want to create
+            clsBranch ABranch = new clsBranch();
+            //create a string variable to store the result of the validation
+            String Error = "";
+            //create some test data to test the method
+            string SomeBranch = "0123456789012345678901234";
+            //invoke the method
+            Error = ABranch.Valid(SomeBranch);
+            //test to see that the result is NOT OK i.e there should be an error message 
+            Assert.AreEqual(Error, "");
+        }
+
 
 
 
     }
+
 }
