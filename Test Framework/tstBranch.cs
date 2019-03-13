@@ -62,6 +62,23 @@ namespace Test_Framework
 
 
         }
+        [TestMethod]
+        public void BranchMinlessOne()
+        {
+            //create an instance of the class we want to create
+            clsBranch ABranch = new clsBranch();
+            //create a string variable to store the result of the validation
+            String Error = "";
+            //create some test data to test the method
+            string SomeBranch = "";
+            //invoke the method
+            Error = ABranch.Valid(SomeBranch);
+            //test to see that the result is NOT OK i.e there should be an error message 
+            Assert.AreNotEqual(Error, "");
+        }
+
+
+
 
     }
 }
