@@ -7,6 +7,12 @@ namespace Test_Framework
     [TestClass]
     public class tstStaff
     {
+
+        string FirstName = "Dave";
+        string LastName = "Peters";
+        string StaffID = "123";
+        string Address = "Gateway House, De Montfort University";
+
         [TestMethod]
         public void InstanceOK()
         {
@@ -55,6 +61,36 @@ namespace Test_Framework
             Assert.AreEqual(AStaff.StaffID, StaffID);
         }
 
+        //[TestMethod]
+        //public void StaffIDMinLessOne()
+        //{
+        //    //create an instance of the class we want to create
+        //    clsStaff AStaff = new clsStaff();
+        //    //create a string variable to store the result of the validation
+        //    String Error = "";
+        //    //create some test data to test the method
+        //    Int32 SomeStaffID = "";
+        //    //invoke the method
+        //    Error = AStaff.Valid(SomeStaffID);
+        //    //test to see that the result is not OK 
+        //    Assert.AreNotEqual(Error, "");
+        //}
+
+        //[TestMethod]
+        //public void ValidMethodOK()
+        //{
+        //    //create an instance of the class we want to create
+        //    clsStaff AStaff = new clsStaff();
+        //    //create a string variable to store the result of the validation
+        //    String Error = "";
+        //    //create some test data to test the method
+        //    string SomeLastName = "Peters";
+        //    //invoke the method
+        //    Error = AStaff.Valid(SomeLastName);
+        //    //test to see that the result is OK
+        //    Assert.AreEqual(Error, "");
+        //}
+
         [TestMethod]
         public void ValidMethodOK()
         {
@@ -62,15 +98,26 @@ namespace Test_Framework
             clsStaff AStaff = new clsStaff();
             //create a string variable to store the result of the validation
             String Error = "";
-            //create some test data to test the method
-            string SomeLastName = "Peters";
             //invoke the method
-            Error = AStaff.Valid(SomeLastName);
+            Error = AStaff.Valid(FirstName,LastName,StaffID, Address);
             //test to see that the result is OK
             Assert.AreEqual(Error, "");
         }
 
-
+        [TestMethod]
+        public void FindMethodOK()
+        {
+            //create an instance of the class we want to create
+            clsStaff AStaff = new clsStaff();
+            //boolean variable to store the result of the validation
+            Boolean Found = false;
+            //create some test data to use with the method
+            Int32 StaffID = 1;
+            //invoke the method
+            Found = AStaff.Find(StaffID);
+            //test to see that the result is correct
+            Assert.IsTrue(Found);
+        }
 
         [TestMethod]
         public void LastNameMinLessOne()
@@ -192,6 +239,142 @@ namespace Test_Framework
             Error = AStaff.Valid(SomeLastName);
             //test to see that the result is not OK i.e there should be an error message 
             Assert.AreNotEqual(Error, "");
+        }
+
+
+        [TestMethod]
+        public void FirstNameMinLessOne()
+        {
+            //create an instance of the class we want to create
+            clsStaff AStaff = new clsStaff();
+            //create a string variable to store the result of the validation
+            String Error = "";
+            //create some test data to test the method
+            string SomeFirstName = "";
+            //invoke the method
+            Error = AStaff.Valid(SomeFirstName);
+            //test to see that the result is not OK i.e there should be an error message 
+            Assert.AreNotEqual(Error, "");
+        }
+
+        [TestMethod]
+        public void FirstNameMinBoundary()
+        {
+            //create an instance of the class we want to create
+            clsStaff AStaff = new clsStaff();
+            //create a string variable to store the result of the validation
+            String Error = "";
+            //create some test data to test the method
+            string SomeFirstName = "a";
+            //invoke the method
+            Error = AStaff.Valid(SomeFirstName);
+            //test to see that the result is not OK i.e there should be an error message 
+            Assert.AreEqual(Error, "");
+        }
+
+        [TestMethod]
+        public void FirstNameMinPlusOne()
+        {
+            //create an instance of the class we want to create
+            clsStaff AStaff = new clsStaff();
+            //create a string variable to store the result of the validation
+            String Error = "";
+            //create some test data to test the method
+            string SomeFirstName = "aa";
+            //invoke the method
+            Error = AStaff.Valid(SomeFirstName);
+            //test to see that the result is not OK i.e there should be an error message 
+            Assert.AreEqual(Error, "");
+        }
+
+        [TestMethod]
+        public void FirstNameMaxLessOne()
+        {
+            //create an instance of the class we want to create
+            clsStaff AStaff = new clsStaff();
+            //create a string variable to store the result of the validation
+            String Error = "";
+            //create some test data to test the method
+            string SomeFirstName = "01234567890123456789012345678";
+            //invoke the method
+            Error = AStaff.Valid(SomeFirstName);
+            //test to see that the result is not OK i.e there should be an error message 
+            Assert.AreEqual(Error, "");
+        }
+
+        [TestMethod]
+        public void FirstNameMaxBoundary()
+        {
+            //create an instance of the class we want to create
+            clsStaff AStaff = new clsStaff();
+            //create a string variable to store the result of the validation
+            String Error = "";
+            //create some test data to test the method
+            string SomeFirstName = "012345678901234567890123456789";
+            //invoke the method
+            Error = AStaff.Valid(SomeFirstName);
+            //test to see that the result is not OK i.e there should be an error message 
+            Assert.AreEqual(Error, "");
+        }
+
+        [TestMethod]
+        public void FirstNameMaxPlusOne()
+        {
+            //create an instance of the class we want to create
+            clsStaff AStaff = new clsStaff();
+            //create a string variable to store the result of the validation
+            String Error = "";
+            //create some test data to test the method
+            string SomeFirstName = "0123456789012345678901234567890";
+            //invoke the method
+            Error = AStaff.Valid(SomeFirstName);
+            //test to see that the result is not OK i.e there should be an error message 
+            Assert.AreNotEqual(Error, "");
+        }
+
+        [TestMethod]
+        public void FirstNameMid()
+        {
+            //create an instance of the class we want to create
+            clsStaff AStaff = new clsStaff();
+            //create a string variable to store the result of the validation
+            String Error = "";
+            //create some test data to test the method
+            string SomeFirstName = "012345678901234";
+            //invoke the method
+            Error = AStaff.Valid(SomeFirstName);
+            //test to see that the result is not OK i.e there should be an error message 
+            Assert.AreEqual(Error, "");
+        }
+
+        [TestMethod]
+        public void FirstNameExtremeMax()
+        {
+            //create an instance of the class we want to create
+            clsStaff AStaff = new clsStaff();
+            //create a string variable to store the result of the validation
+            String Error = "";
+            //create some test data to test the method
+            string SomeFirstName = "";
+            //pad the string with characters
+            SomeFirstName = SomeFirstName.PadRight(500, 'a');
+            //invoke the method
+            Error = AStaff.Valid(SomeFirstName);
+            //test to see that the result is not OK i.e there should be an error message 
+            Assert.AreNotEqual(Error, "");
+        }
+
+        [TestMethod]
+        public void ActivePropertyOK()
+        {
+            //create an instance of the class we want to create
+            clsStaff AStaff = new clsStaff();
+            //some test data to assign to the property
+            Boolean TestData = true;
+            //assign the data to the property
+            AStaff.Active = TestData;
+            //test to see that the two values are the same
+            Assert.AreEqual(AStaff.Active, TestData);
         }
 
 
