@@ -69,6 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="StaffMenu.aspx" />
     <Content Include="StyleSheet.css" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -77,17 +78,16 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="VideoGameShop.Master.cs">
-      <DependentUpon>VideoGameShop.Master</DependentUpon>
+    <Compile Include="StaffMenu.aspx.cs">
+      <DependentUpon>StaffMenu.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="VideoGameShop.Master.designer.cs">
-      <DependentUpon>VideoGameShop.Master</DependentUpon>
+    <Compile Include="StaffMenu.aspx.designer.cs">
+      <DependentUpon>StaffMenu.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <Content Include="VideoGameShop.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
