@@ -21,7 +21,7 @@
             <asp:Button ID="btnUpdate" runat="server" OnClick="btnUpdate_Click1" Text="Update Branch" Width="154px" />
             <br />
             <br />
-            <asp:Button ID="btnFilterByPostCode" runat="server" Text="FilterByPostCode" />
+            <asp:Button ID="btnFilterByPostCode" runat="server" Text="FilterByPostCode" OnClick="btnFilterByPostCode_Click" />
             <br />
             <br />
             <br />

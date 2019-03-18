@@ -14,27 +14,24 @@ namespace VGFrontEnd
 
         }
 
-        protected void BtnAdd(object sender, EventArgs e)
+        protected void btnAdd_Click(object sender, EventArgs e)
         {
             Response.Redirect("AddBranch.aspx");
         }
 
-        protected void BtnDelete_Click(object sender, EventArgs e)
+        protected void btnDelete_Click1(object sender, EventArgs e)
         {
             Response.Redirect("DeleteBranch.aspx");
         }
 
-        protected void BtnUpdate_Click(object sender, EventArgs e)
+        protected void btnUpdate_Click1(object sender, EventArgs e)
         {
             Response.Redirect("UpdateBranch.aspx");
         }
 
-        protected void BtnFilterByPostcode_Click(object sender, EventArgs e)
+        protected void btnFilterByPostCode_Click(object sender, EventArgs e)
         {
-            Response.Redirect("FilterByPostCode.aspx");
+            Response.Redirect("BranchFilterByPostCode.aspx");
         }
-
-
-
     }
 }
