@@ -10,7 +10,7 @@
 namespace VGFrontEnd {
     
     
-    public partial class StaffMenu {
+    public partial class StaffEntry {
         
         /// <summary>
         /// form1 control.
@@ -22,39 +22,57 @@ namespace VGFrontEnd {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// ButtonStaffEntry control.
+        /// TextBoxFirstName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ButtonStaffEntry;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxFirstName;
         
         /// <summary>
-        /// ButtonStaffDelete control.
+        /// TextBoxLastName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ButtonStaffDelete;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxLastName;
         
         /// <summary>
-        /// ButtonListStaff control.
+        /// TextBoxAddress control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ButtonListStaff;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxAddress;
         
         /// <summary>
-        /// ButtonUpdateStaff control.
+        /// ButtonAddStaff control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ButtonUpdateStaff;
+        protected global::System.Web.UI.WebControls.Button ButtonAddStaff;
+        
+        /// <summary>
+        /// lblError control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblError;
+        
+        /// <summary>
+        /// ButtonMainMenu control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ButtonMainMenu;
     }
 }
