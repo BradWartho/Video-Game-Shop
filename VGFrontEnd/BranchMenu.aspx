@@ -12,13 +12,13 @@
             Video Game Branch<br />
             <br />
             <br />
-            <asp:Button ID="btnAdd" runat="server" Text="Add Branch" Width="147px" />
+            <asp:Button ID="btnAdd" runat="server" OnClick="btnAdd_Click" Text="Add Branch" Width="147px" />
             <br />
             <br />
-            <asp:Button ID="btnDelete" runat="server" Height="24px" Text="Delete Branch" Width="149px" />
+            <asp:Button ID="btnDelete" runat="server" Height="24px" OnClick="btnDelete_Click1" Text="Delete Branch" Width="149px" />
             <br />
             <br />
-            <asp:Button ID="btnUpdate" runat="server" Text="Update Branch" Width="154px" />
+            <asp:Button ID="btnUpdate" runat="server" OnClick="btnUpdate_Click1" Text="Update Branch" Width="154px" />
             <br />
             <br />
             <asp:Button ID="btnFilterByPostCode" runat="server" Text="FilterByPostCode" />

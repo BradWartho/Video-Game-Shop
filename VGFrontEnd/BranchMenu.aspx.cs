@@ -18,7 +18,7 @@ namespace VGFrontEnd
         {
             Response.Redirect("AddBranch.aspx");
         }
-        
+
         protected void BtnDelete_Click(object sender, EventArgs e)
         {
             Response.Redirect("DeleteBranch.aspx");
@@ -33,8 +33,9 @@ namespace VGFrontEnd
         {
             Response.Redirect("FilterByPostCode.aspx");
         }
+
+
+
     }
-
-
 }
-}
+
