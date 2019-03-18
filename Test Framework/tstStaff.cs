@@ -76,6 +76,7 @@ namespace Test_Framework
         //    Assert.AreNotEqual(Error, "");
         //}
 
+
         //[TestMethod]
         //public void ValidMethodOK()
         //{
@@ -83,26 +84,11 @@ namespace Test_Framework
         //    clsStaff AStaff = new clsStaff();
         //    //create a string variable to store the result of the validation
         //    String Error = "";
-        //    //create some test data to test the method
-        //    string SomeLastName = "Peters";
         //    //invoke the method
-        //    Error = AStaff.Valid(SomeLastName);
+        //    Error = AStaff.Valid(FirstName,LastName,StaffID, Address);
         //    //test to see that the result is OK
         //    Assert.AreEqual(Error, "");
         //}
-
-        [TestMethod]
-        public void ValidMethodOK()
-        {
-            //create an instance of the class we want to create
-            clsStaff AStaff = new clsStaff();
-            //create a string variable to store the result of the validation
-            String Error = "";
-            //invoke the method
-            Error = AStaff.Valid(FirstName,LastName,StaffID, Address);
-            //test to see that the result is OK
-            Assert.AreEqual(Error, "");
-        }
 
         [TestMethod]
         public void FindMethodOK()
@@ -364,18 +350,18 @@ namespace Test_Framework
             Assert.AreNotEqual(Error, "");
         }
 
-        [TestMethod]
-        public void ActivePropertyOK()
-        {
-            //create an instance of the class we want to create
-            clsStaff AStaff = new clsStaff();
-            //some test data to assign to the property
-            Boolean TestData = true;
-            //assign the data to the property
-            AStaff.Active = TestData;
-            //test to see that the two values are the same
-            Assert.AreEqual(AStaff.Active, TestData);
-        }
+        //[TestMethod]
+        //public void ActivePropertyOK()
+        //{
+        //    //create an instance of the class we want to create
+        //    clsStaff AStaff = new clsStaff();
+        //    //some test data to assign to the property
+        //    Boolean TestData = true;
+        //    //assign the data to the property
+        //    AStaff.Active = TestData;
+        //    //test to see that the two values are the same
+        //    Assert.AreEqual(AStaff.Active, TestData);
+        //}
 
 
     }

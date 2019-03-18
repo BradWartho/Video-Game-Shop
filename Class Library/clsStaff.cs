@@ -29,5 +29,11 @@ namespace Class_Library
             }
             return Error;
         }
+
+        public bool Find(int staffID)
+        {
+            //always return true
+            return true;
+        }
     }
 }
