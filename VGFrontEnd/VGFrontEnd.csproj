@@ -68,22 +68,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Add Branch.aspx" />
+    <Content Include="AddBranch.aspx" />
     <Content Include="BranchFilterByPostCode.aspx" />
     <Content Include="BranchMenu.aspx" />
     <Content Include="DeleteBranch.aspx" />
     <Content Include="Global.asax" />
     <Content Include="StaffMenu.aspx" />
     <Content Include="StyleSheet.css" />
+    <Content Include="UpdateBranch.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Add Branch.aspx.cs">
-      <DependentUpon>Add Branch.aspx</DependentUpon>
+    <Compile Include="AddBranch.aspx.cs">
+      <DependentUpon>AddBranch.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Add Branch.aspx.designer.cs">
-      <DependentUpon>Add Branch.aspx</DependentUpon>
+    <Compile Include="AddBranch.aspx.designer.cs">
+      <DependentUpon>AddBranch.aspx</DependentUpon>
     </Compile>
     <Compile Include="BranchFilterByPostCode.aspx.cs">
       <DependentUpon>BranchFilterByPostCode.aspx</DependentUpon>
@@ -116,6 +117,13 @@
     </Compile>
     <Compile Include="StaffMenu.aspx.designer.cs">
       <DependentUpon>StaffMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateBranch.aspx.cs">
+      <DependentUpon>UpdateBranch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateBranch.aspx.designer.cs">
+      <DependentUpon>UpdateBranch.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
