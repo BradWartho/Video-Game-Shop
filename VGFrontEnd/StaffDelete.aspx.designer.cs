@@ -10,7 +10,7 @@
 namespace VGFrontEnd {
     
     
-    public partial class StaffMenu {
+    public partial class StaffDelete {
         
         /// <summary>
         /// form1 control.
@@ -22,39 +22,39 @@ namespace VGFrontEnd {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// ButtonStaffEntry control.
+        /// TextBoxStaffID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ButtonStaffEntry;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxStaffID;
         
         /// <summary>
-        /// ButtonStaffDelete control.
+        /// ButtonDeleteStaff control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ButtonStaffDelete;
+        protected global::System.Web.UI.WebControls.Button ButtonDeleteStaff;
         
         /// <summary>
-        /// ButtonListStaff control.
+        /// lblError control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ButtonListStaff;
+        protected global::System.Web.UI.WebControls.Label lblError;
         
         /// <summary>
-        /// ButtonUpdateStaff control.
+        /// ButtonMainMenu control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ButtonUpdateStaff;
+        protected global::System.Web.UI.WebControls.Button ButtonMainMenu;
     }
 }
