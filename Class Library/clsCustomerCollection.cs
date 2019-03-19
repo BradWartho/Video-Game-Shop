@@ -50,7 +50,7 @@ namespace Class_Library
             mAllCustomers.Add(ACustomer);
             //adds address
             ACustomer = new clsCustomer();
-            ACustomer.Address = "1 A Streer";
+            ACustomer.Address = "1 A Street";
             mAllCustomers.Add(ACustomer);
             //adds county
             ACustomer = new clsCustomer();
@@ -58,11 +58,11 @@ namespace Class_Library
             mAllCustomers.Add(ACustomer);
             //adds post code
             ACustomer = new clsCustomer();
-            ACustomer.PostCode= "AB1 1CD";
+            ACustomer.PostCode= "AB1 2CD";
             mAllCustomers.Add(ACustomer);
             //adds email address
             ACustomer = new clsCustomer();
-            ACustomer.EmailAddress= "geroge@gmail.com";
+            ACustomer.EmailAddress= "george@gmail.com";
             mAllCustomers.Add(ACustomer);
             //adds phone number
             ACustomer = new clsCustomer();

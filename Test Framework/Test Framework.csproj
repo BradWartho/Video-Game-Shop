@@ -51,6 +51,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="tstBranch.cs" />
     <Compile Include="tstBranchCollection.cs" />
+    <Compile Include="tstCustomer.cs" />
+    <Compile Include="tstCustomerCollection.cs" />
     <Compile Include="tstStaff.cs" />
     <Compile Include="tstStaffCollection.cs" />
   </ItemGroup>
