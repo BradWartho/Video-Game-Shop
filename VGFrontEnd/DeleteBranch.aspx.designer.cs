@@ -40,6 +40,24 @@ namespace VGFrontEnd {
         protected global::System.Web.UI.WebControls.TextBox TextBox1;
         
         /// <summary>
+        /// btnDeleteBranch control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnDeleteBranch;
+        
+        /// <summary>
+        /// lblDeleteBranch control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblDeleteBranch;
+        
+        /// <summary>
         /// Btnback control.
         /// </summary>
         /// <remarks>

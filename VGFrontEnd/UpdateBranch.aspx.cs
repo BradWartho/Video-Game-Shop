@@ -18,5 +18,10 @@ namespace VGFrontEnd
         {
             Response.Redirect("BranchMenu.aspx");
         }
+
+        protected void BntUpdateButton_Click(object sender, EventArgs e)
+        {
+            lblUpdateButton.Text = "Succesfully Updated Branch";
+        }
     }
 }

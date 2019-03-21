@@ -22,6 +22,8 @@
             <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
             <br />
             <br />
+            <asp:Button ID="btnDeleteBranch" runat="server" OnClick="btnDeleteBranch_Click" Text="Delete Branch" />
+            <asp:Label ID="lblDeleteBranch" runat="server"></asp:Label>
             <br />
             <br />
             <asp:Button ID="Btnback" runat="server" OnClick="Btnback_Click1" Text="Back" />
