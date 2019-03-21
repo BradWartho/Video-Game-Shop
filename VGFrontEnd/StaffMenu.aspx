@@ -4,6 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
     <title></title>
 </head>
 <body>
@@ -23,7 +24,7 @@
             <asp:Button ID="ButtonUpdateStaff" runat="server" Height="48px" OnClick="ButtonUpdateStaff_Click" Text="Update Staff" Width="100px" />
             <br />
             <br />
-            <br />
+            <img alt="Image result for staff" src="https://www.tourismtribe.com/wp-content/uploads/image00-3-1024x768.png" style="height: 254px; width: 351px" /><br />
             <br />
             <br />
             <br />
