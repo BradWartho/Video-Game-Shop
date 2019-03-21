@@ -22,13 +22,13 @@ namespace VGFrontEnd {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// TextBoxsStaffID control.
+        /// TextBox1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxsStaffID;
+        protected global::System.Web.UI.WebControls.TextBox TextBox1;
         
         /// <summary>
         /// ButtonFindStaffMember control.
@@ -76,13 +76,13 @@ namespace VGFrontEnd {
         protected global::System.Web.UI.WebControls.TextBox TextBoxAddress;
         
         /// <summary>
-        /// ButtonUpdateDetails control.
+        /// ButtonUpdateStaffDetails control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ButtonUpdateDetails;
+        protected global::System.Web.UI.WebControls.Button ButtonUpdateStaffDetails;
         
         /// <summary>
         /// lblUpdateDetails control.

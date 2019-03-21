@@ -73,9 +73,13 @@
     <Content Include="BranchMenu.aspx" />
     <Content Include="DeleteBranch.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="ListStaff.aspx" />
+    <Content Include="StaffDelete.aspx" />
+    <Content Include="StaffEntry.aspx" />
     <Content Include="StaffMenu.aspx" />
     <Content Include="StyleSheet.css" />
     <Content Include="UpdateBranch.aspx" />
+    <Content Include="UpdateStaff.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -110,7 +114,28 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="ListStaff.aspx.cs">
+      <DependentUpon>ListStaff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListStaff.aspx.designer.cs">
+      <DependentUpon>ListStaff.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StaffDelete.aspx.cs">
+      <DependentUpon>StaffDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StaffDelete.aspx.designer.cs">
+      <DependentUpon>StaffDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StaffEntry.aspx.cs">
+      <DependentUpon>StaffEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StaffEntry.aspx.designer.cs">
+      <DependentUpon>StaffEntry.aspx</DependentUpon>
+    </Compile>
     <Compile Include="StaffMenu.aspx.cs">
       <DependentUpon>StaffMenu.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -124,6 +149,13 @@
     </Compile>
     <Compile Include="UpdateBranch.aspx.designer.cs">
       <DependentUpon>UpdateBranch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateStaff.aspx.cs">
+      <DependentUpon>UpdateStaff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateStaff.aspx.designer.cs">
+      <DependentUpon>UpdateStaff.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
