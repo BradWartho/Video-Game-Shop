@@ -33,5 +33,10 @@ namespace VGFrontEnd
         {
             Response.Redirect("BranchFilterByPostCode.aspx");
         }
+
+        protected void ImageMap1_Click(object sender, ImageMapEventArgs e)
+        {
+
+        }
     }
 }
