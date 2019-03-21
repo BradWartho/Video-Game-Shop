@@ -26,6 +26,7 @@
             <br />
             <img alt="Image result for staff" src="https://www.tourismtribe.com/wp-content/uploads/image00-3-1024x768.png" style="height: 254px; width: 351px" /><br />
             <br />
+            <asp:Button ID="ButtonHome" runat="server" OnClick="ButtonHome_Click" Text="Home" />
             <br />
             <br />
             <br />

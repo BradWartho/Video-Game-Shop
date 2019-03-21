@@ -33,5 +33,10 @@ namespace VGFrontEnd
         {
             Response.Redirect("UpdateStaff.aspx");
         }
+
+        protected void ButtonHome_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("MainMenu.aspx");
+        }
     }
 }
