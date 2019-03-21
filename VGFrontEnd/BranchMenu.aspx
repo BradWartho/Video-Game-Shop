@@ -35,7 +35,7 @@
             <br />
             <br />
             <br />
-            <asp:Button ID="btnExit" runat="server" Height="26px" Text="Exit" Width="81px" />
+            <asp:Button ID="btnReturntoMainMenu" runat="server" Height="34px" Text="Return to MainMenu" Width="130px" OnClick="btnReturntoMainMenu_Click" />
             <br />
             <br />
             <br />

@@ -16,7 +16,7 @@ namespace VGFrontEnd
 
         protected void BtnAddBranch_Click(object sender, EventArgs e)
         {
-
+            lblAddBranch.Text = "Succesfully Added Branch";
         }
 
         protected void BtnBackBranch_Click(object sender, EventArgs e)

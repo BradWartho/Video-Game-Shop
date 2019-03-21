@@ -37,6 +37,7 @@
             <br />
             <br />
             <asp:Button ID="BtnAddBranch" runat="server" OnClick="BtnAddBranch_Click" Text="Add Branch" />
+            <asp:Label ID="lblAddBranch" runat="server"></asp:Label>
             <br />
             <br />
             <asp:Button ID="BtnBackBranch" runat="server" OnClick="BtnBackBranch_Click" Text="Back" />

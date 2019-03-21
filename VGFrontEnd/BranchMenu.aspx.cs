@@ -38,5 +38,10 @@ namespace VGFrontEnd
         {
 
         }
+
+        protected void btnReturntoMainMenu_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

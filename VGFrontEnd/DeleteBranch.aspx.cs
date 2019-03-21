@@ -18,5 +18,10 @@ namespace VGFrontEnd
         {
             Response.Redirect("BranchMenu.aspx");
         }
+
+        protected void btnDeleteBranch_Click(object sender, EventArgs e)
+        {
+            lblDeleteBranch.Text = "Succesfully Deleted Branch";
+        }
     }
 }

@@ -31,7 +31,8 @@
         <br />
         <br />
         <br />
-        <asp:Button ID="BntUpdateButton" runat="server" Text="Update Button" />
+        <asp:Button ID="BntUpdateButton" runat="server" Text="Update Button" OnClick="BntUpdateButton_Click" />
+        <asp:Label ID="lblUpdateButton" runat="server"></asp:Label>
         <br />
         <br />
         <asp:Button ID="BtnBack" runat="server" OnClick="BtnBack_Click" Text="Back" />

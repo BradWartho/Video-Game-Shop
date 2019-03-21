@@ -18,5 +18,10 @@ namespace VGFrontEnd
         {
             Response.Redirect("BranchMenu.aspx");
         }
+
+        protected void BtnFilter_Click(object sender, EventArgs e)
+        {
+            lblFilterBranch.Text = "Succesfully Filtered Branch";
+        }
     }
 }

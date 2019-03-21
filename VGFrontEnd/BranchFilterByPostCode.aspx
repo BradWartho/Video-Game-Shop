@@ -19,9 +19,9 @@
             <br />
             <br />
             <br />
-            <asp:Button ID="BtnFilter" runat="server" Text="Filter " Width="44px" />
+            <asp:Button ID="BtnFilter" runat="server" Text="Filter " Width="44px" OnClick="BtnFilter_Click" />
             &nbsp;&nbsp;
-            <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+            <asp:Label ID="lblFilterBranch" runat="server"></asp:Label>
             <br />
             <br />
             <asp:Button ID="BtnBackFilter" runat="server" OnClick="BtnBackFilter_Click1" Text="Back" />
