@@ -31,11 +31,11 @@
             <asp:Button ID="btnUpdate" runat="server" OnClick="btnUpdate_Click1" Text="Update Branch" Width="154px" />
             <br />
             <br />
-            <asp:Button ID="btnFilterByPostCode" runat="server" Text="FilterByPostCode" OnClick="btnFilterByPostCode_Click" />
+            <asp:Button ID="btnFilterByPostCode" runat="server" Text="Filter By Post Code" OnClick="btnFilterByPostCode_Click" />
             <br />
             <br />
             <br />
-            <asp:Button ID="btnReturntoMainMenu" runat="server" Height="34px" Text="Return to MainMenu" Width="130px" OnClick="btnReturntoMainMenu_Click" />
+            <asp:Button ID="btnReturntoMainMenu" runat="server" Height="34px" Text="Return to Main Menu" Width="154px" OnClick="btnReturntoMainMenu_Click" />
             <br />
             <br />
             <br />
