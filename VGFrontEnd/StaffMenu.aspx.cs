@@ -13,5 +13,25 @@ namespace VGFrontEnd
         {
 
         }
+
+        protected void ButtonStaffEntry_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("StaffEntry.aspx");
+        }
+
+        protected void ButtonStaffDelete_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("StaffDelete.aspx");
+        }
+
+        protected void ButtonListStaff_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ListStaff.aspx");
+        }
+
+        protected void ButtonUpdateStaff_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("UpdateStaff.aspx");
+        }
     }
 }
