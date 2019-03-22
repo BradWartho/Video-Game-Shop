@@ -27,7 +27,7 @@
             <asp:Button ID="BtnBackFilter" runat="server" OnClick="BtnBackFilter_Click1" Text="Back" />
             <br />
             <br />
-            <asp:Label ID="LblFilter" runat="server" Text="Label"></asp:Label>
+            <asp:Label ID="LblFilter" runat="server"></asp:Label>
             <br />
             <br />
         </div>
